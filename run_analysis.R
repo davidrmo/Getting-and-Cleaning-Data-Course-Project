@@ -8,8 +8,8 @@
 
 library(dplyr) 
 
-# Change WD to the folder with the data
-setwd("~/RWorkingDir/Getting and Cleaning Data/Week 3/UCI HAR Dataset")
+# Change WD to the folder with the data (commented out - the script assumes the script is in the top-level folder of the "UCI HAR Dataset" folder structure)
+# setwd("~/RWorkingDir/Getting and Cleaning Data/Week 3/UCI HAR Dataset")
 
 # Load Feature names, then drop the first column since it's meaningless
 # We will use feature_names to name the columns as we import the train and test data (to satisfy req #4)
