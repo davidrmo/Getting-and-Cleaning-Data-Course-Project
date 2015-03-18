@@ -4,12 +4,12 @@ This repository contains the relevant files to satisfy the requirements of the C
 Steps to create the tidy data file:
 
 1. Step 1 - download *run_analysis.R* to the top-level of the "UCI HAR Dataset" folder structure (place it in the "UCI HAR Dataset" folder)
-2. Step 2 - run *run_analysis.R*
+2. Step 2 - source *run_analysis.R*  (in RStudio, type *source('run_analysis.R')*  )
 3. Step 3 - the tidy output file will be called "summary_data.txt" and stored in the "UCI HAR Dataset" folder
 
-To load / verify the tidy data file, run the following in RStudio:
+To load / verify the tidy data file, set the working directory to "UCI HAR Dataset" and run the following in RStudio (h/t to [*David's personal course project FAQ*](https://class.coursera.org/getdata-012/forum/thread?thread_id=9) in the class forum):
 
-> data <- read.table(file_path, header = TRUE)
+> data <- read.table("run_analysis.R", header = TRUE)
 
 > View(data)
 
